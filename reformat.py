@@ -8,7 +8,7 @@ def extract_conspub(bech32_out):
     return validator_conspub
 
 def base64_to_bech32(pubkey):
-    cmd = f"docker run --rm -it cosmos-gaiadebug:v2.0.0 pubkey {pubkey}"
+    cmd = f"docker run --rm -it cosmos-gaiadebug:v2.0.1 pubkey {pubkey}"
     bech32_out = os.popen(cmd).read()
     return extract_conspub(bech32_out)
 
