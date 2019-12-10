@@ -96,7 +96,7 @@ def main():
     }
 
     # Export For Height
-    # export_for_height(settings)
+    export_for_height(settings)
     # Check SHA256 SUM
     checksum_exported(settings)
 
