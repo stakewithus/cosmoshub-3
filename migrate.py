@@ -16,6 +16,7 @@ def export_for_height(settings):
 -w /opt/chain \
 --rm -it {from_image} \
 export \
+--home /opt/chain \
 --for-zero-height \
 --height={export_height} \
 > exported.json
